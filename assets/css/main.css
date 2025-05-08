@@ -26,6 +26,7 @@ body {
 header {
     height: 56px;
     background-color: var(--cards-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 footer {
@@ -48,12 +49,12 @@ section {
 }
 
 aside {
-    width: 30%;
+    width: 50%;
     height: 400px;
 }
 
 .second-column {
-    width: 40%;
+    width: 100%;
     height: 400px;
 }
 
@@ -96,30 +97,23 @@ aside {
     padding: 10px;
 }
   
-  .title {
-    /* height: 56px; */
+h1 {
+    position: relative;
+    right: 2px;
+    line-height: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    place-content: center;
+}
   
-    h1 {
-        position: relative;
-        right: 2px;
-        line-height: 20px;
-        font-size: 1.8rem;
-        color: var(--primary-colour);
-        font-weight: 500;
-        text-transform: uppercase;
-        place-content: center;
-    }
-  }
-  
-  /* nav {
-    height: 56px;
-  } */
-  
-  nav .nav-list {
+nav .nav-list {
     list-style: none;
-  }
+}
   
-  nav .nav-list li {
+nav .nav-list li {
     display: inline;
     line-height: 56px;
   
@@ -134,10 +128,10 @@ aside {
             transition: color 0.25s ease-in-out;
         }
     }
-  }
+}
   
   .nav-list li + li {
-    margin-left: 16px;
+    margin-left: 24px;
   }
   
   .search-bar {
@@ -151,11 +145,12 @@ aside {
     padding: 0 15px 0 32px;
     border-radius: 50px;
     transition: all 0.25s ease-in-out;
-    background: #f6f6f6 url(../img/image4.png) no-repeat 10px 11px;
-    background-size: 16px;
+    background: #f6f6f6 url(../img/search-icon2.png) no-repeat 10px 11px;
+    background-size: 14px;
+    border: 1px solid transparent;
   
     &:focus {
-        border: 1px solid var(--primary-colour);
+        border: 1px solid var(--primary-color);
     }
   }
 
