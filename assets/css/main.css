@@ -5,6 +5,7 @@
     margin-inline: auto;
 }
 
+/* these are the variables for the color paletter... to use it do "var(--primary-color)"*/
 :root {
     --primary-color: #0A66C2;
     --cards-color: #fcfcfc;
@@ -54,3 +55,12 @@ aside {
     width: 40%;
     height: 400px;
 }
+
+/* Ayomides code goes here for the prople section*/
+
+
+
+
+
+
+/* Ashedzi code goes here for the prople section*/
