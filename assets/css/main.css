@@ -9,6 +9,7 @@
 :root {
     --primary-color: #0A66C2;
     --cards-color: #fcfcfc;
+    --on-primary-color: #fff;
     --background-color: #eeeeee;
     --button-padding: 12px 24px;
     --button-radius: 5px;
@@ -24,7 +25,8 @@ body {
 
 header {
     height: 56px;
-    background-color: aliceblue;
+    background-color: var(--cards-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 footer {
@@ -47,12 +49,12 @@ section {
 }
 
 aside {
-    width: 30%;
+    width: 50%;
     height: 400px;
 }
 
 .second-column {
-    width: 40%;
+    width: 100%;
     height: 400px;
 }
 
@@ -64,3 +66,101 @@ aside {
 
 
 /* Ashedzi code goes here for the prople section*/
+/* ----------Header--------- */
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-80 {
+    gap: 80px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.hamburger {
+    font-size: 24px;
+    color: #000;
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+  
+h1 {
+    position: relative;
+    right: 2px;
+    line-height: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    place-content: center;
+}
+  
+nav .nav-list {
+    list-style: none;
+}
+  
+nav .nav-list li {
+    display: inline;
+    line-height: 56px;
+  
+    a {
+        text-decoration: none;
+        color: #525252;
+        font-size: 1.6rem;
+        font-weight: 500;
+    
+        &:hover {
+            color: var(--primary-colour);
+            transition: color 0.25s ease-in-out;
+        }
+    }
+}
+  
+  .nav-list li + li {
+    margin-left: 24px;
+  }
+  
+  .search-bar {
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    height: 38px;
+    padding: 0 15px 0 32px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    background: #f6f6f6 url(../img/search-icon2.png) no-repeat 10px 11px;
+    background-size: 14px;
+    border: 1px solid transparent;
+  
+    &:focus {
+        border: 1px solid var(--primary-color);
+    }
+  }
+
+  .logout {
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+
