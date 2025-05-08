@@ -9,6 +9,7 @@
 :root {
     --primary-color: #0A66C2;
     --cards-color: #fcfcfc;
+    --on-primary-color: #fff;
     --background-color: #eeeeee;
     --button-padding: 12px 24px;
     --button-radius: 5px;
@@ -24,7 +25,7 @@ body {
 
 header {
     height: 56px;
-    background-color: aliceblue;
+    background-color: var(--cards-color);
 }
 
 footer {
@@ -74,6 +75,14 @@ aside {
     gap: 20px;
 }
 
+.gap-80 {
+    gap: 80px;
+}
+
+.align-center {
+    align-items: center;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -88,7 +97,7 @@ aside {
 }
   
   .title {
-    height: 56px;
+    /* height: 56px; */
   
     h1 {
         position: relative;
@@ -100,18 +109,11 @@ aside {
         text-transform: uppercase;
         place-content: center;
     }
-  
-    .logo {
-        height: 60px;
-        width: 60px;
-        padding-top: 5px;
-        margin-right: 30px;
-    }
   }
   
-  nav {
+  /* nav {
     height: 56px;
-  }
+  } */
   
   nav .nav-list {
     list-style: none;
@@ -160,5 +162,10 @@ aside {
   .logout {
     padding: var(--button-padding);
     border-radius: var(--button-radius);
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-decoration: none;
   }
 
