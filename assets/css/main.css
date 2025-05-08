@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.container {
+    width: min(100% - 10px, 1440px);
+    margin-inline: auto;
+}
+
+:root {
+    --primary-color: #0A66C2;
+    --cards-color: #fcfcfc;
+    --background-color: #eeeeee;
+    --button-padding: 12px 24px;
+    --button-radius: 5px;
+}
+
+body {
+    font-family: "Inter", "Open Sans", "Lato", Arial, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+header {
+    height: 56px;
+    background-color: aliceblue;
+}
+
+footer {
+    height: 60px;
+    background-color: aliceblue;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+section {
+    margin-top: 40px;
+    height: calc(100dvh - 56px);
+}
+
+.column {
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+aside {
+    width: 30%;
+    height: 400px;
+}
+
+.second-column {
+    width: 40%;
+    height: 400px;
+}
