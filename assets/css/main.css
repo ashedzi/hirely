@@ -56,7 +56,6 @@ section {
 aside {
     width: 50%;
     height: fit-content;
-    /* border: 1px solid #000; */
 }
 
 .second-column {
@@ -64,7 +63,6 @@ aside {
 }
 
 /* Ayomides code goes here for the prople section*/
-
 
 
 
@@ -91,6 +89,10 @@ aside {
 
 .gap-80 {
     gap: 80px;
+}
+
+.margin-bottom {
+    margin-bottom: 8px;
 }
 
 .align-items {
