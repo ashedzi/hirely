@@ -43,7 +43,7 @@ footer {
 
 section {
     margin-top: 40px;
-    height: calc(100dvh - 56px);
+    height: calc(100dvh - 116px);
 }
 
 .column {
@@ -173,6 +173,11 @@ input[type=text] {
     font-weight: 600;
     font-size: 1.4rem;
     text-decoration: none;
+
+    &:hover {
+        background-color: var(--primary-dark);
+        transition: background-color 0.25s ease-in-out;
+    }
 }
 
 .post-container, .uploads{
@@ -266,11 +271,9 @@ input[type=button] {
     }
 }
 
-
 .bottom-inputs {
     margin-top: 8px;
 }
-
 
 .user-info {
     p {
