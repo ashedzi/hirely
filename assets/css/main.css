@@ -1,20 +1,25 @@
 @charset "utf-8";
 
 .container {
-    width: min(100% - 10px, 1440px);
+    width: min(100% - 30px, 1400px);
     margin-inline: auto;
 }
 
+/* these are the variables for the color paletter... to use it do "var(--primary-color)"*/
 :root {
     --primary-color: #0A66C2;
     --cards-color: #fcfcfc;
+    --on-primary-color: #fff;
     --background-color: #eeeeee;
     --button-padding: 12px 24px;
     --button-radius: 5px;
+    --primary-dark: #05407b;
 }
 
 body {
     font-family: "Inter", "Open Sans", "Lato", Arial, sans-serif;
+    background-color: var(--background-color);
+    flex: 1;
 }
 
 .flex{
@@ -23,12 +28,17 @@ body {
 
 header {
     height: 56px;
-    background-color: aliceblue;
+    background-color: var(--cards-color);
 }
 
 footer {
     height: 60px;
-    background-color: aliceblue;
+    background-color: #dfdfdf;
+
+    p{
+        text-align: center;
+        line-height: 60px;
+    }
 }
 
 .gap-40 {
@@ -36,8 +46,7 @@ footer {
 }
 
 section {
-    margin-top: 40px;
-    height: calc(100dvh - 56px);
+    margin: 40px 0;
 }
 
 .column {
@@ -45,15 +54,361 @@ section {
     border: none;
 }
 
-aside {
-    width: 30%;
-    height: 400px;
+.second-column {
+    width: 100%;
 }
 
-.second-column {
-    width: 40%;
-    height: 400px;
+aside {
+    width: 50%;
+    height: fit-content;
 }
+
+/* Ashedzi code goes here for the prople section*/
+/* ----------Header--------- */
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.column-direction {
+    flex-direction: column;
+}
+
+.gap-80 {
+    gap: 80px;
+}
+
+.margin-bottom {
+    margin-bottom: 8px;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.padding-12 {
+    padding: 12px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.hamburger {
+    font-size: 24px;
+    color: #000;
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+  
+h1 {
+    position: relative;
+    right: 2px;
+    line-height: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    place-content: center;
+}
+  
+nav .nav-list {
+    list-style: none;
+}
+  
+nav .nav-list li {
+    display: inline;
+    line-height: 56px;
+  
+    a {
+        text-decoration: none;
+        color: #525252;
+        font-size: 1.6rem;
+        font-weight: 500;
+    
+        &:hover {
+            color: var(--primary-colour);
+            transition: color 0.25s ease-in-out;
+        }
+    }
+}
+  
+  .nav-list li + li {
+    margin-left: 24px;
+  }
+  
+  .search-bar {
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+input[type=text] {
+    width: 100%;
+    height: 38px;
+    padding: 0 15px 0 32px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    background: #f6f6f6 url(../img/search-icon2.png) no-repeat 10px 11px;
+    background-size: 14px;
+    border: 1px solid transparent;
+  
+    &:focus {
+        border: 1px solid var(--primary-color);
+    }
+}
+
+.logout {
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--primary-dark);
+        transition: background-color 0.25s ease-in-out;
+    }
+}
+
+.first-column{
+    color: #000;
+    border-radius: 4px;
+    background-color: var(--cards-color);
+}
+
+.connects, .followers {
+    cursor: pointer;
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    h3, p {
+        text-align: center;
+    }
+
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+    padding: 8px;
+
+    &:hover {
+        background-color: #dfdfdf;
+        transition: background-color 0.25s ease-in-out;
+    }
+}
+
+.connects {
+    border-right: 1px solid #dfdfdf;
+}
+
+.social-links {
+    font-size: 1.4rem;
+    color: #336c89;
+}
+
+.upgrade-button {
+    padding: 8px 16px;
+    background-color: #e6f7ff;
+    color: #989898;
+    border: 1px solid #699cd0;
+    border-radius: 80px;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #d6effb;
+        transition: background-color 0.25s ease-in-out;
+        border: 1px solid transparent;
+    }
+}
+
+.last-row {
+    padding: 24px;
+
+    p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
+.job-title {
+    font-size: 1.4rem
+}
+
+.post-container, .uploads{
+    padding: 12px;
+    width: 100%;
+    margin-inline: auto;
+    color: #000;
+    border-radius: 4px;
+    background-color: var(--cards-color);
+}
+
+.post-container {
+    height: 120px;
+}
+
+.uploads-container {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+input[type=file] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    color: #6A6A6A;
+    font-size: 1.9rem;
+    align-self: flex-end;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.file-name {
+    font-size: 1.2rem;
+    color: #6A6A6A;
+    font-weight: 600;
+}
+
+input[type=button] {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: auto;
+
+    &:hover {
+        background-color: var(--primary-dark);
+        transition: background-color 0.25s ease-in-out;
+    }
+}
+
+.bottom-inputs {
+    margin-top: 8px;
+}
+
+.user-info {
+    p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+.post-date {
+    p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+
+.bottom-inputs {
+    margin-top: 8px;
+}
+
+.user-info {
+    p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+.post-date {
+    p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+
+.avartar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.content-uploaded {
+    margin-top: 20px;
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    figure {
+        scale: 1/1;
+        margin-top: 8px;
+
+        img {
+            border-radius: 5px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.uploads + .uploads {
+    margin-top: 20px;
+}
+
+.user-profile-pic {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+/* Ayomides code goes here for the prople section*/
 
 aside h2 {
     height: 50px;
@@ -106,4 +461,5 @@ aside h2 {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    width: 100%;
 }
