@@ -1,6 +1,6 @@
 'use strict';
 
-const URL = "https://randomuser.me/api/?nat=CA&results=10&seed=same";
+const URL = "https://randomuser.me/api/?nat=CA&results=10";
 
 const options = {
     methods: "GET",
@@ -18,7 +18,7 @@ async function getUser(endpoint) {
         }
 
         const data = await result.json();
-        console.log(data.results);
+        displayUser(data.results);
 
     } catch (error) {
         console.error(error.message);
