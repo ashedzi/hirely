@@ -29,7 +29,6 @@ body {
 header {
     height: 56px;
     background-color: var(--cards-color);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 footer {
@@ -42,7 +41,7 @@ footer {
 }
 
 section {
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .column {
@@ -191,7 +190,6 @@ input[type=text] {
     background-color: var(--cards-color);
 }
 
-
 .post-container {
     height: 120px;
 }
@@ -248,16 +246,6 @@ input[type=button] {
 .bottom-inputs {
     margin-top: 8px;
 }
-
-/* .uploads {
-    padding: 12px;
-    margin-inline: auto;
-    margin-top: 40px;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    background-color: #fff;
-} */
 
 .user-info {
     p {
