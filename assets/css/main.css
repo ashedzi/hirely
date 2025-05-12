@@ -33,7 +33,12 @@ header {
 
 footer {
     height: 60px;
-    background-color: aliceblue;
+    background-color: #dfdfdf;
+
+    p{
+        text-align: center;
+        line-height: 60px;
+    }
 }
 
 .gap-40 {
