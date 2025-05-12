@@ -50,8 +50,8 @@ section {
 
 aside {
     width: 50%;
-    height: 400px;
-    border: 1px solid #000;
+    height: fit-content;
+    /* border: 1px solid #000; */
 }
 
 .second-column {
@@ -190,14 +190,14 @@ input[type=text] {
 }
 
 .first-column{
-    /* padding: 12px; */
-    margin-inline: auto;
     color: #000;
     border-radius: 4px;
     background-color: var(--cards-color);
 }
 
 .connects, .followers {
+    cursor: pointer;
+    
     h3 {
         font-size: 1.6rem;
     }
@@ -225,9 +225,39 @@ input[type=text] {
     border-right: 1px solid #dfdfdf;
 }
 
-/* .followers {
-    border-left: 1px solid #6A6A6A;;
-} */
+.social-links {
+    font-size: 1.4rem;
+    color: #336c89;
+}
+
+.upgrade-button {
+    padding: 8px 16px;
+    background-color: #e6f7ff;
+    color: #989898;
+    border: 1px solid #699cd0;
+    border-radius: 80px;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #d6effb;
+        transition: background-color 0.25s ease-in-out;
+        border: 1px solid transparent;
+    }
+}
+
+.last-row {
+    padding: 24px;
+
+    p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
+.job-title {
+    font-size: 1.4rem
+}
 
 .post-container, .uploads{
     padding: 12px;
