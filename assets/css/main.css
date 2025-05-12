@@ -408,26 +408,26 @@ input[type=button] {
     }
 }
 
-/* Ayomides code goes here for the prople section*/
+/*-------------------*/
+/* Third Column Style*/
+/*-------------------*/
 
 aside h2 {
     height: 50px;
     font-size: 20px;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #fcfcfc;
     font-weight: 700;
     text-align: center;
     border-radius: 3px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     line-height: 50px;
     margin-bottom: 3px;
 }
 
 .user-card {
-    background: white;
+    background: #fcfcfc;
     border-radius: 3px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     margin-bottom: 3px;
@@ -451,15 +451,23 @@ aside h2 {
 
     p {
         color: #7d7d7d;
+        font-weight: 500;
     }
 }
 
 .add-btn {
-    color: #002f96;
+    color: #0A66C2;
     background-color: #bbe3f0;
     padding: 1px 6px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
     width: 100%;
+    margin-top: 12px;
+}
+
+.add-btn:hover {
+    background-color: #0A66C2;
+    color: #fff;
+    transition: background-color 0.25s ease-in-out;
 }
