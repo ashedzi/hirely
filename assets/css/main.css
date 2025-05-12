@@ -19,6 +19,7 @@
 body {
     font-family: "Inter", "Open Sans", "Lato", Arial, sans-serif;
     background-color: var(--background-color);
+    flex: 1;
 }
 
 .flex{
