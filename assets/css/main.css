@@ -88,6 +88,10 @@ aside {
     gap: 80px;
 }
 
+.margin-bottom {
+    margin-bottom: 8px;
+}
+
 .align-items {
     align-items: center;
 }
