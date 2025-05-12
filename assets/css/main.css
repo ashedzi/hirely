@@ -210,19 +210,19 @@ input[type=text] {
         text-align: center;
     }
 
-    border-top: 1px solid #878787;
-    border-bottom: 1px solid #878787;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
     width: 100%;
     padding: 8px;
 
     &:hover {
-        background-color: #c8c8c8;
+        background-color: #dfdfdf;
         transition: background-color 0.25s ease-in-out;
     }
 }
 
 .connects {
-    border-right: 1px solid #6A6A6A;;
+    border-right: 1px solid #dfdfdf;
 }
 
 /* .followers {
