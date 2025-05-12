@@ -3,8 +3,8 @@
 const URL = "https://randomuser.me/api/?nat=CA&results=10&seed=same";
 
 const options = {
-    method: "GET",
-    headers: {
+    methods: "GET",
+    header: {
         'Content-Type': 'application/JSON; charset=UTF-8'
     },
     mode: 'cors'
@@ -18,7 +18,7 @@ async function getUser(endpoint) {
         }
 
         const data = await result.json();
-        displayUser(data.results);
+        console.log(data.results);
 
     } catch (error) {
         console.error(error.message);
@@ -32,9 +32,16 @@ function displayUser(users) {
         const userCard = document.createElement('div');
         userCard.classList.add('user-card');
         userCard.innerHTML = `
-            <img src="${user.picture.small}" alt="User Picture">
-            <h3>${user.name.first} ${user.name.last}</h3>
-            <p>${user.occupation}</p>
+            <div class="user-card-content">
+                <img src="${user.picture.medium}" alt="User Picture">
+                <div class="user-info">
+                    <h3>${user.name.first} ${user.name.last}</h3>
+                    <p>${user.location.city}</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn add-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
         `;
         thirdContainer.appendChild(userCard);
     });
