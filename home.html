@@ -13,24 +13,129 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
-        <script src="./assets/js/index.js" type="module"></script>
+        <script src="./assets/js/home.js" type="module"></script>
         <link rel="stylesheet" href="./assets/css/main.css" media="all" >
     </head>
     <body>
         <header>
-
+            <div class="container flex space-between">
+                <div class="title flex">
+                    <h1>Hirely</h1>
+                    <div class="flex center search-bar">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <nav class="flex gap-80 align-items">
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Network</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Job</a></li>
+                        <li><a href="#">Work</a></li>
+                    </ul>
+                    <a href="index.html" class="logout">Logout</a>
+                </nav>
+                <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </header>
         <main>
             <div class="container">
                 <section class="flex gap-40">
                     <aside class="column first-column">
-                        
+                        <div class="flex column-direction center padding-12">
+                            <figure class="user-profile-pic margin-bottom">
+                                <img src="./assets/img/user-profile.jpg">
+                            </figure>
+                            <h3>Ashedzi Solomon</h3>
+                            <p class="job-title">Full stack software developer</p><span></span>
+                            <div class="flex center gap-8 social-links">
+                                <i class="fa-solid fa-link"></i>
+                                <p>https://www.linkedin.com/in/</p>
+                            </div>
+                        </div>
+                        <div class="flex center">
+                            <div class="connects">
+                                <h3>1,234</h3>
+                                <p>Connections</p>
+                            </div>
+                            <div class="followers">
+                                <h3>7,234</h3>
+                                <p>Viewers</p>
+                            </div>
+                        </div>
+                        <div class="flex center column-direction gap-8 last-row">
+                            <p>Free access to exclusive tools and insight</p>
+                            <button class="upgrade-button">Upgrade to premium</button>
+                            <!-- <div class="upgrade-button">
+                                <p>Upgrade to premium</p>
+                            </div> -->
+                        </div>
                     </aside>
                     <div class="column second-column">
-                        
+                        <div class="post-container flex column-direction">
+                            <textarea placeholder="What's new, Ashe?"></textarea>
+                            <div class="bottom-inputs flex align-end">
+                                <div class="flex align-end gap-8">
+                                    <label for="file"><i class="fa-solid fa-image"></i></label> 
+                                    <span class="file-name">Upload photo/video</span>
+                                </div>
+                                <input type="file" id="file" class="select-file">
+                                <input type="button" value="Post" class="post-button">
+                            </div>
+                        </div>
+                        <section>
+                            <div class="uploads-container">
+                                <div class="uploads">
+                                    <div class="user-post-info flex space-between align-items">
+                                        <div class="user-info flex gap-8 align-items">
+                                            <figure class="avartar"><img src="./assets/img/khan.jpg">
+                                            </figure>
+                                            <p>Sharuk Kahan</p>
+                                        </div>
+                                        <div class="post-date"><p>Fri May 09 2025</p></div>
+                                    </div>
+                                    <div class="content-uploaded">
+                                        <p>
+                                            Thrilled to announce that I’ve just accepted a new role as a Frontend Developer at NovaTech Systems!
+                                            After months of learning, growing, and building passion projects, this opportunity feels 
+                                            like the perfect next step. I’m incredibly grateful to everyone who supported me through 
+                                            the interview process — especially my mentors and the amazing tech community here on Hirely.
+                                            If you're looking to break into tech, keep pushing — your time will come.
+                                            #NewJob #FrontendDeveloper #TechCareers #HirelySuccess
+                                        </p>
+                                        <figure>
+                                            <img src="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="uploads">
+                                    <div class="user-post-info flex space-between align-items">
+                                        <div class="user-info flex gap-8 align-items">
+                                            <figure class="avartar"><img src="./assets/img/famita-profilepic.jpg">
+                                            </figure>
+                                            <p>Fatima Abubakar</p>
+                                        </div>
+                                        <div class="post-date"><p>Fri May 09 2025</p></div>
+                                    </div>
+                                    <div class="content-uploaded">
+                                        <p>
+                                            Midweek reminder:
+                                            You don’t always have to be in “grind mode” to be productive.
+                                            Today, I stepped away from my screen for 15 minutes, grabbed a cup of coffee, and sketched some random UI ideas in my notebook. Surprisingly, that short break led to one of my best design flows this week.
+                                             Your brain needs air, too. Breathe. Step back. Come back better.
+                                            #WorkLifeBalance #MidweekMotivation #DesignThinking #HirelyVibes
+                                        </p>
+                                        <figure>
+                                            <img src="./assets/img/fatima.jpg">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                     <aside class="column third-column">
-                        
+                        <h2>People you may know</h2>                        
                     </aside>
                 </section>
             </div>
