@@ -25,21 +25,7 @@ body {
 .flex{
     display: flex;
 }
-
-header {
-    height: 56px;
-    background-color: var(--cards-color);
-}
-
-footer {
-    height: 60px;
-    background-color: #dfdfdf;
-
-    p{
-        text-align: center;
-        line-height: 60px;
-    }
-}
+/* ---------Utility classes------------- */
 
 .gap-40 {
     gap: 40px;
@@ -63,8 +49,6 @@ aside {
     height: fit-content;
 }
 
-/* Ashedzi code goes here for the prople section*/
-/* ----------Header--------- */
 .center {
     justify-content: center;
     align-items: center;
@@ -110,6 +94,25 @@ aside {
     justify-content: space-between;
 }
 
+/* ---------Header and footer--------- */
+
+header {
+    height: 56px;
+    background-color: var(--cards-color);
+}
+
+footer {
+    height: 60px;
+    background-color: #dfdfdf;
+
+    p{
+        text-align: center;
+        line-height: 60px;
+    }
+}
+
+/* ---------------------------------- */
+/* ---------Navigation bar--------- */
 .hamburger {
     font-size: 24px;
     color: #000;
@@ -190,7 +193,9 @@ input[type=text] {
         transition: background-color 0.25s ease-in-out;
     }
 }
+/* -------------------------------------- */
 
+/* ------------First column-------------- */
 .first-column{
     color: #000;
     border-radius: 4px;
@@ -261,6 +266,8 @@ input[type=text] {
 .job-title {
     font-size: 1.4rem
 }
+
+/* ------------Second column-------------- */
 
 .post-container, .uploads{
     padding: 12px;
@@ -408,9 +415,7 @@ input[type=button] {
     }
 }
 
-/*-------------------*/
-/* Third Column Style*/
-/*-------------------*/
+/* ------------Third column-------------- */
 
 aside h2 {
     height: 50px;

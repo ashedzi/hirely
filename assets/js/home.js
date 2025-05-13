@@ -1,4 +1,3 @@
-// Ashedzis javascript should go here 
 'use strict';
 
 const post = document.querySelector('.post-button');
