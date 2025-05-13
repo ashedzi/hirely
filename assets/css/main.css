@@ -70,6 +70,139 @@ aside {
     gap: 80px;
 }
 
+<<<<<<< HEAD
+/* Ashedzi code goes here for the prople section*/
+
+
+
+
+/* Xiyu code goes here for the prople section*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    flex: 1;
+    position: relative;
+    background: url() center / cover no-repeat;
+  }
+  .left .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+  }
+  
+  .right {
+    flex: 1;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .brand {
+    color: #1572e8;
+  }
+  .subtitle {
+    margin-top: 0.5rem;
+    color: #666;
+  }
+  
+  .progress {
+    width: 100px;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+  }
+  .progress-bar {
+    width: 40%;
+    height: 100%;
+    background: #1572e8;
+  }
+  
+  .login-form .input-group {
+    margin-bottom: 1rem;
+  }
+  .login-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+  }
+  .login-form input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  .options .forgot {
+    text-decoration: none;
+    color: #1572e8;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .btn {
+    flex: 1;
+    padding: 0.8rem 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .login-btn {
+    background: #1572e8;
+    color: #fff;
+  }
+  .create-btn {
+    background: #fff;
+    border: 1px solid #1572e8;
+    color: #1572e8;
+  }
+  
+  .social-text {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    color: #666;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .social-icon {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #1572e8;
+  }
+=======
 .margin-bottom {
     margin-bottom: 8px;
 }
@@ -477,3 +610,4 @@ aside h2 {
     color: #fff;
     transition: background-color 0.25s ease-in-out;
 }
+>>>>>>> main
