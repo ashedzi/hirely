@@ -5,7 +5,6 @@
     margin-inline: auto;
 }
 
-/* these are the variables for the color paletter... to use it do "var(--primary-color)"*/
 :root {
     --primary-color: #0A66C2;
     --cards-color: #fcfcfc;
@@ -231,6 +230,7 @@ input[type=text] {
 .social-links {
     font-size: 1.4rem;
     color: #336c89;
+    cursor: pointer;
 }
 
 .upgrade-button {
@@ -305,8 +305,8 @@ label {
 
 .file-name {
     font-size: 1.2rem;
-    color: #6A6A6A;
-    font-weight: 600;
+    color: #8e8e8e;
+    font-weight: 500;
 }
 
 input[type=button] {
@@ -377,7 +377,7 @@ input[type=button] {
     margin-top: 20px;
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     figure {
@@ -415,22 +415,22 @@ input[type=button] {
 aside h2 {
     height: 50px;
     font-size: 1.6rem;
-    color: #000000;
-    background-color: #fcfcfc;
+    color: #000;
+    background-color: var(--cards-color);
     font-weight: 700;
     text-align: center;
-    border-radius: 3px;
     line-height: 50px;
-    margin-bottom: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 2px;
 }
 
 .user-card {
-    background: #fcfcfc;
-    border-radius: 3px;
+    background: var(--cards-color);
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 
     img {
         border-radius: 50%;
@@ -444,30 +444,31 @@ aside h2 {
     column-gap: 10px;
 }
 
-.user-info {
-    h3, p {
-        font-size: 15px;
+.user-data {
+    h3 {
+        font-size: 1.5rem;
     }
 
     p {
         color: #7d7d7d;
-        font-weight: 500;
+        font-weight: 400;
+        font-size: 1.4rem;
     }
 }
 
 .add-btn {
-    color: #0A66C2;
-    background-color: #bbe3f0;
-    padding: 1px 6px;
+    color: var(--primary-dark);
+    background-color: #e6f7ff;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    border: none;
     cursor: pointer;
-    width: 100%;
     margin-top: 12px;
+    font-size: 1.5rem;
 }
 
 .add-btn:hover {
-    background-color: #0A66C2;
+    background-color: var(--primary-color);
     color: #fff;
     transition: background-color 0.25s ease-in-out;
 }

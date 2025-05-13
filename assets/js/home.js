@@ -134,7 +134,7 @@ function displayUser(users) {
         userCard.innerHTML = `
             <div class="user-card-content">
                 <img src="${user.picture.medium}" alt="User Picture">
-                <div class="user-info">
+                <div class="user-data">
                     <h3>${user.name.first} ${user.name.last}</h3>
                     <p>${user.location.city}</p>
                 </div>
