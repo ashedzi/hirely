@@ -17,8 +17,7 @@
 ## 💡 Key Features  
 - **Login with Local Storage Validation**  
 - **Post Functionality** – Share job updates, announcements, or personal career news  
-- **User Feed** – Dynamic feed showcasing posts from different users  
-- **Responsive Design** – Mobile-first layout with clean typography and structure  
+- **User Feed** – Dynamic feed showcasing posts from different users   
 - **API Integration** – Simulated network of professionals via Random User API  
 
 ## 🛠 Technologies Used  

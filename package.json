@@ -4,7 +4,8 @@
   "description": "**Hirely** is a sleek and interactive web application inspired by platforms like LinkedIn. Built with HTML, CSS, and JavaScript, it allows users to log in, connect with other professionals, and share job-related posts. It simulates a real networking community using randomly generated user profiles from an external API.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
