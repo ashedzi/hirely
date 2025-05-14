@@ -1,0 +1,23 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "**Hirely** is a sleek and interactive web application inspired by platforms like LinkedIn. Built with HTML, CSS, and JavaScript, it allows users to log in, connect with other professionals, and share job-related posts. It simulates a real networking community using randomly generated user profiles from an external API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashedzi/hirely.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashedzi/hirely/issues"
+  },
+  "homepage": "https://github.com/ashedzi/hirely#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
