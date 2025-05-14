@@ -1,46 +1,19 @@
 'use strict';
 
 const body = document.querySelector('body');
+const passwordInput = document.getElementById('password');
+const togglePassword = document.getElementById('togglePassword');
 
-function setBackGroundImage(img) {
-    body.style.background = `#18171f url(${img}) center center / cover no-repeat`;
-}
+togglePassword.addEventListener('click', () => {
+  const isPasswordHidden = passwordInput.type === 'password';
 
-function getBackGroundImage() {
-    const URL = 'https://unsplash.com/photos/a-pink-towel-hanging-from-a-window-with-two-black-shutters-FhzljWO6caw'
-    fetch(URL) 
-        .then(response => {
-            console.log(`status: ${response.status}`);
-            setBackGroundImage(URL);
-            console.log('Asynchronous task completed');
-        })
-        .catch(error => {
-            console.log(error.message);
-        });
-}
+  // Toggle the input type
+  passwordInput.type = isPasswordHidden ? 'text' : 'password';
 
-getBackGroundImage();
-
-
-const URL_USERS = "https://randomuser.me/api/?nat=CA&results=10&seed=same";
-
-const options = {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/JSON; charset=UTF-8'
-    },
-    mode: 'cors'
-};
-
-fetch(URL_USERS, options)
-     .then(response => response.json())
-     .then(json => json.results)
-     .then(results => {
-         console.log(results);
-
-     })
-     .catch(error => console.error(error));
-
+  // Swap the icon classes
+  togglePassword.classList.toggle('fa-eye');
+  togglePassword.classList.toggle('fa-eye-slash');
+});
 
 const TEST_USER = 'hirelyUser';
 const TEST_PWD  = 'Welcome123';
