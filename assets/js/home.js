@@ -31,7 +31,7 @@ function createPost() {
     const userPostInfo = createElements('div', {class: 'user-post-info flex space-between align-items'});
     const userInfo = createElements('div', {class: 'user-info flex gap-8 align-items'});
     const postImageContainer = createElements('figure', {class: 'avartar'});
-    const postImage = createElements('img', {src: './assets/img/avartar.jpg'});
+    const postImage = createElements('img', {src: './assets/img/user-profile.jpg'});
     const postDate = createElements('div', {class: 'post-date'});
     const usersName = createElements('p', {}, 'Ashedzi Solomon');
     const date = createElements('p', {}, new Date().toDateString());

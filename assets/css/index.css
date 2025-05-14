@@ -48,64 +48,64 @@ body {
     flex-direction: column;
 }
 
-  .brand {
+.brand {
     color: var(--primary-color);
-  }
+}
 
-  .subtitle {
+.subtitle {
     margin-top: 0.5rem;
     color: #666;
-  }
+}
   
-  .progress {
+.progress {
     width: 100px;
     height: 4px;
     background: #e0e0e0;
     border-radius: 2px;
     margin: 15px 0;
     overflow: hidden;
-  }
+}
 
-  .progress-bar {
+.progress-bar {
     width: 40%;
     height: 100%;
     background: var(--primary-color);
-  }
+}
   
-  .login-form .input-group {
+.login-form .input-group {
     margin-bottom: 10px;
-  }
+}
 
-  .login-form label {
+.login-form label {
     display: block;
     font-size: 1.4rem;
-  }
+}
 
-    input[type=email], input[type=password], input[type=text] {
+input[type=email], input[type=password], input[type=text] {
     width: 100%;
     padding: 16px 16px;
     border: 1px solid var(--border-color);
     border-radius: 6px;
     font-size: 1.4rem;
-  }
+}
 
-  .options {
+.options {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-  }
+}
 
-  .options .forgot {
+.options .forgot {
     text-decoration: none;
     color: var(--primary-color);
-  }
+}
 
-  .forgot {
-     font-size: 1.4rem;
-  }
+.forgot {
+    font-size: 1.4rem;
+}
 
-  .checkbox-label {
+.checkbox-label {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -184,5 +184,11 @@ body {
     text-decoration: none;
     font-size: 1.3rem;
     color: var(--primary-color);
+  }
+
+  .error-message {
+    padding-bottom: 16px;
+    color: #b00b16;
+    visibility: hidden;
   }
 
