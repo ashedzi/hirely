@@ -24,3 +24,8 @@
 - **HTML5** – Semantic structure for login and feed pages  
 - **CSS3** – Responsive styles and modern layout  
 - **JavaScript (ES6)** – Local storage logic, post creation, API fetch, and DOM manipulation 
+
+## Login details
+To test the project use the following details 
+- **Username** - me@gmail.com
+-**Password** - Welcome123
